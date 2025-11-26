@@ -1,0 +1,461 @@
+/* =========================================
+   RESET / GERAL
+========================================= */
+* {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    font-family: Helvetica, Arial, sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-color: #050b21;
+    color: #fff;
+    height: 100vh;
+    transition: background-color .4s ease, color .4s ease;
+}
+
+main {
+    padding: 5rem 10rem;
+}
+
+/* =========================================
+   HEADER / FORM GROUP
+========================================= */
+.form-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: #1f2535;
+    color: #fff;
+    padding: 0 12px;
+    height: 65px;
+    position: relative;
+    transition: background-color .4s ease, color .4s ease;
+}
+
+.form-group span i {
+    cursor: pointer;
+}
+
+input {
+    width: 100%;
+    height: 45px;
+    background-color: #1f2535;
+    color: #fff;
+    padding-left: 5px;
+    border: none;
+    outline: none;
+    transition: background-color .4s ease, color .4s ease;
+}
+
+input~span {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* =========================================
+   NAVBAR / EXTENSION
+========================================= */
+.extension-navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.extension-navbar span i {
+    font-size: 32px;
+    color: red;
+}
+
+.extension-navbar p {
+    font-size: 18px;
+    text-transform: capitalize;
+    transition: color .4s ease;
+}
+
+#icon-sun {
+    color: #000;
+    display: none;
+}
+
+.dark-mode #icon-sun {
+    display: inline-block;
+}
+
+.dark-mode #icon-moon {
+    display: none;
+}
+
+
+/* =========================================
+   MENU
+========================================= */
+.menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+}
+
+.menu h4 {
+    font-size: 22px;
+    text-transform: capitalize;
+    color: #fff;
+    transition: color .4s ease;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+ul li {
+    display: flex;
+    align-items: center;
+}
+
+ul li a {
+    margin-left: 2rem;
+    font-size: 16px;
+    text-transform: capitalize;
+    display: inline-flex;
+    width: 60px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    color: #fff;
+}
+
+ul li a.all {
+    background-color: red;
+}
+
+.all-ina {
+    width: 70px;
+    background-color: #1f2535;
+}
+
+/* =========================================
+   CARDS
+========================================= */
+.card-main {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2rem 0;
+}
+
+.card {
+    width: 32%;
+    background-color: #1f2535;
+    color: #fff;
+    padding: 10px 1.3rem;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    transition: background-color .4s ease, color .4s ease;
+}
+
+.card-content {
+    display: flex;
+    gap: 10px;
+}
+
+.card-content span i {
+    background-color: red;
+    padding: 10px;
+    font-size: 22px;
+    border-radius: 5px;
+}
+
+.card-content p {
+    color: #c1bfbf;
+    transition: color .4s ease;
+}
+
+.card-content p span {
+    font-weight: 700;
+    color: #fff;
+    transition: color .4s ease;
+}
+
+.card-btn {
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-btn button {
+    background-color: transparent;
+    border: 2px solid #fff;
+    padding: 5px 10px;
+    color: #fff;
+    border-radius: 15px;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: border-color .4s ease, color .4s ease;
+}
+
+/* Ícones coloridos individuais */
+#fist {
+    background-color: #c0d8c0 !important;
+    color: #000 !important;
+}
+
+#secund {
+    background-color: #a8d6e5 !important;
+    color: #000 !important;
+}
+
+#third {
+    background-color: #ffd0c5 !important;
+    color: #000 !important;
+}
+
+#footh {
+    background-color: #eec1ea !important;
+    color: #000 !important;
+}
+
+#quinto {
+    background-color: #ceb9f1 !important;
+    color: #000 !important;
+}
+
+#sexto {
+    background-color: #98f5e2 !important;
+    color: #000 !important;
+}
+
+/* =========================================
+   DARK MODE
+========================================= */
+body.dark-mode {
+    background-color: #bbc0c4;
+    color: #000;
+}
+
+/* Form */
+body.dark-mode .form-group {
+    background-color: #f9f9f9;
+}
+
+body.dark-mode input {
+    background-color: #fff;
+    color: #000;
+}
+
+body.dark-mode .extension-navbar p {
+    color: #000;
+}
+
+body.dark-mode .menu h4 {
+    color: #000;
+}
+
+/* Cards */
+body.dark-mode .card {
+    background-color: #f3f2f2;
+    color: #000;
+    box-shadow: 2px 3px 9px #0002;
+}
+
+body.dark-mode .card-content p {
+    color: #000;
+}
+
+body.dark-mode .card-content p span {
+    color: #000;
+}
+
+body.dark-mode .card-btn button {
+    border-color: #000;
+    color: #000;
+}
+
+/* =========================================
+   ÍCONES SUN/MOON
+========================================= */
+.theme-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 22px;
+    position: relative;
+}
+
+.icon-sun {
+    display: none;
+}
+
+.icon-moon,
+.icon-sun {
+    transition: opacity .2s ease;
+}
+
+body.dark-mode .icon-moon {
+    display: none;
+}
+
+body.dark-mode .icon-sun {
+    display: inline-block;
+}
+
+/* =========================================
+   SWITCH (iPhone style)
+========================================= */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 46px;
+    height: 24px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    inset: 0;
+    background-color: #8e8282;
+    transition: .3s;
+    height: 24px;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.slider:before {
+    content: "";
+    position: absolute;
+    height: 18px;
+    width: 18px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    border-radius: 50%;
+    transition: .3s;
+}
+
+.switch input:checked+.slider {
+    background-color: #4cd964;
+}
+
+.switch input:checked+.slider:before {
+    transform: translateX(22px);
+}
+
+/* =======================
+   📱 RESPONSIVIDADE MOBILE
+==========================*/
+
+@media (max-width: 768px) {
+
+    /* Header reorganizado */
+
+
+    .form-group input {
+        width: 100%;
+    }
+
+    /* Ícones de tema alinhados */
+    #icon-moon,
+    #icon-sun {
+        font-size: 1.3rem;
+        margin-left: auto;
+        cursor: pointer;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    /* Título do menu */
+    .menu h4 {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    /* Menu lateral vira horizontal */
+    .menu ul {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        padding: 17px 0;
+    }
+
+    .menu ul li a {
+        font-size: 0.9rem;
+        padding: 4px 6px;
+    }
+
+    /* Cards organizados em uma coluna */
+    .card-main {
+        display: block;
+        grid-template-columns: 1fr 2fr;
+        gap: 15px;
+    }
+
+    /* Card otimizado para mobile */
+    .card {
+        display: flex;
+        flex-direction: column;
+        padding: 12px;
+        width: 100% !important;
+        border: 3px solid red;
+    }
+
+    main {
+        padding:10px 2rem;
+        
+    }
+
+    /* Conteúdo do card responsivo */
+    .card-content {
+        display: flex;
+        gap: 15px;
+    }
+
+    .card-content p {
+        font-size: 0.9rem;
+    }
+
+    .card-btn {
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .btn-remove {
+        padding: 6px 12px;
+        font-size: 0.8rem;
+    }
+
+    /* Switch responsivo */
+    .switch {
+        transform: scale(0.8);
+    }
+}
+
+/* =======================
+   📱 EXTRA: Mobile pequeno
+==========================*/
+
+
+
+@media(max-width:846px) {
+    .card {
+        width: 48%;
+    }
+}
